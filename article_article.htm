@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_【少林寺官方武校】</title>
+<meta name="applicable-device" content="pc,mobile" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description'/}">
+<link href="/templets/default/css/idangerous.swiper.css" type="text/css" rel="stylesheet"/>
+<link href="/templets/default/css/js.css" type="text/css" rel="stylesheet"/>
+<link href="/templets/default/css/style.css" type="text/css" rel="stylesheet"/>
+<link href="/templets/default/css/video-js.css" rel="stylesheet">
+<script src="js/videojs-ie8.min.js"></script>
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
+{dede:include filename="head.htm"/}
+
+<div class="sl8-hbg pc1">
+<div class="sl8-h">
+<span>当前位置—{dede:field name='typename'/}</span>
+<a href="http://www.henanwuxiao.com/">返回首页+</a><a href="http://www.henanwuxiao.com/a/newfile14.html">在线报名+</a>
+</div>
+</div>
+<div class="sl8-hbg phone1">
+<div class="sl8-h">
+<span>{dede:field name='typename'/}</span>
+<a href="http://www.henanwuxiao.com/">返回首页</a>
+</div>
+</div>
+
+<div class="sl8-i">
+{dede:include filename="left.htm"/}
+
+<div class="sl8-ib">
+<div class="sl8-ib-a pc1">当前位置 >  {dede:field name='position'/}<span><a href="http://www.henanwuxiao.com/">嵩山少林寺武校首页</a></span></div>
+<div class="sl8-ib-b">
+
+
+
+
+<div class="title tp"><span>{dede:field.title/}</span></div>
+			<div class="des">
+				<div class="c t">来源：少林寺武校（http://www.henanwuxiao.com/）发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/} 点击：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>次</div>
+				<div class="c f2"><div class="Section0"><p class="p0" style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; "><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; ">
+{dede:field.body/}
+</div></div>
+</div>
+	<div class="c prev">
+	{dede:prenext get='pre'/}<br>
+  {dede:prenext get='next'/}				
+				</div>
+                
+</div>
+
+{dede:include filename="bottom.htm"/}
+
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>
