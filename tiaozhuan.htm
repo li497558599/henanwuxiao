@@ -1,0 +1,28 @@
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="//m.zhongji.gaodun.cn{dede:field name='arcurl'/}">
+    <meta http-equiv="mobile-agent" content="format=html5; url=//m.zhongji.gaodun.cn{dede:field name='arcurl'/}">
+    <meta name="applicable-device" content="pc">
+    <!--对应PC模板加入-->
+    <!-- 跳转JS  -->
+    <script language="JavaScript" type="text/javascript" src="//chuji.gaodun.cn/templets/default/style/m.js"></script>
+    <script language="JavaScript" type="text/javascript">
+    #内容页 browserRedirect("//m.zhongji.gaodun.cn{dede:field name='arcurl'/}");
+    #列表页 browserRedirect("//m.zhongji.gaodun.cn{dede:type}[field:typelink/]{/dede:type}");
+    </script>
+
+
+    #跳转js
+// JavaScript Document
+function browserRedirect(url) {
+        //鍙鐨勫瓧绗︿覆锛屽０鏄庝簡娴忚鍣ㄧ敤浜� HTTP 璇锋眰鐨勭敤鎴蜂唬鐞嗗ご鐨勫€�
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.replace(url);
+        }
+}
